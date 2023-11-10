@@ -4,17 +4,22 @@
 
 //2)ma che per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi “Buzz”. Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
-//1)
+//3)BONUS 1)Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
+
 let numero100 = 100;
 
+const numeroContenitore = document.querySelector('.container-number');
+
 for (let i = 1; i < numero100; i++) {
+  const divContenitore = document.createElement('div');
+
   if (i % 15 === 0) {
-    console.log('fizzbuzz');
+    divContenitore.append('fizzbuzz');
   } else if (i % 3 === 0) {
-    console.log('fizz');
+    divContenitore.append('fizz');
   } else if (i % 5 === 0) {
-    console.log('buzz');
+    divContenitore.append('buzz');
   } else {
-    console.log(i);
+    divContenitore.append(i);
   }
 }
