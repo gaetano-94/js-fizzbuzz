@@ -12,7 +12,7 @@ const numeroContenitore = document.querySelector('.box');
 
 for (let i = 1; i < 100; i++) {
   const divContenitore = document.createElement('div');
-  let value = 1;
+  let value = i;
 
   if (i % 15 === 0) {
     value = 'fizzbuzz';
