@@ -6,7 +6,7 @@
 
 //3)BONUS 1)Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 
-const numeroContenitore = document.querySelector('.container');
+const numeroContenitore = document.querySelector('.box');
 
 for (let i = 1; i < 100; i++) {
   const divContenitore = document.createElement('div');
