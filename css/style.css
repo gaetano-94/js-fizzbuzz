@@ -39,9 +39,26 @@ UTILITY
 .box > div {
   width: 100px;
   height: 100px;
-  margin: 10px;
+  margin: 5px;
   background-color: #1389b2;
   text-align: center;
   line-height: 100px;
+}
+
+.box > div.fizz {
+  background-color: #0cd6a1;
+}
+
+.box > div.buzz {
+  background-color: #ffd166;
+}
+
+.box > div.fizzbuzz {
+  background-color: #f0466f;
+}
+
+.fizz,
+.buzz,
+.fizzbuzz {
   border-radius: 10px;
 }

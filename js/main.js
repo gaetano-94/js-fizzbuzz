@@ -11,12 +11,17 @@ const numeroContenitore = document.querySelector('.box');
 for (let i = 1; i < 100; i++) {
   const divContenitore = document.createElement('div');
   let value = 1;
+
   if (i % 15 === 0) {
     value = 'fizzbuzz';
   } else if (i % 3 === 0) {
     value = 'fizz';
   } else if (i % 5 === 0) {
     value = 'buzz';
+  }
+
+  if (typeof value !== 'number') {
+    divContenitore.classList.add(value);
   }
 
   divContenitore.append(value);
